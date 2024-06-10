@@ -5,7 +5,7 @@ Created on Wed Apr 10 09:47:48 2024
 @author: hugo.cadario
 """
 
-import os
+import os #youhou
 import matplotlib.pyplot as plt
 
 # Chemin vers le dossier source
@@ -25,7 +25,7 @@ for item in os.listdir(source_folder):
     item_path = os.path.join(source_folder, item)
     # Vérifier si l'élément est un dossier
     if os.path.isdir(item_path):
-        # Récupérer la taille du dossier en octets
+        # Récupérer la taille du dossier en octets 
         size = sum(os.path.getsize(os.path.join(item_path, file)) 
                    for file 
                    in os.listdir(item_path)
